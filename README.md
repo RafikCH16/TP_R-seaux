@@ -50,9 +50,9 @@ adresse IP utilisable.
 >
 > ![](vertopal_89c8a71fa7fa42ecbaba98c00c075c87/media/image5.png)![](vertopal_89c8a71fa7fa42ecbaba98c00c075c87/media/image6.png)
 >
-> Explication Code :
+## Explication Code :
 
-Question 1 - Implémentation de GETTFTP :
+### Question 1 - Implémentation de GETTFTP :
 
 Ce code met en œuvre le protocole TFTP (Trivial File Transfer Protocol)
 pour le transfert de données du serveur vers le client. Voici le
@@ -107,7 +107,7 @@ E.  Réception et Écriture des Données du Serveur :
 -   Une fois le transfert accompli, le fichier est fermé, les ressources
     sont libérées et le programme prend fin.
 
-4.  PutTFTP : Transmission d\'un Fichier au Serveur :
+## 4.  PutTFTP : Transmission d\'un Fichier au Serveur :
 
 > Construction d\'une Requête en Écriture (WRQ) et Envoi au Serveur :
 >
@@ -138,32 +138,31 @@ Acquittements :
 > ![](vertopal_89c8a71fa7fa42ecbaba98c00c075c87/media/image7.png)
 >
 > ![](vertopal_89c8a71fa7fa42ecbaba98c00c075c87/media/image8.png)
+## Explication code :
 >
-> Explication code :
->
-> Question 2 - Implémentation de PUTTFTP :
+### Question 2 - Implémentation de PUTTFTP :
 >
 > Ce code met en œuvre le protocole TFTP pour le transfert de données du
 > client vers le serveur. Voici le déroulement du processus :
 >
-> 1\. Initialisation du Client :
+> A\. Initialisation du Client :
 >
 > \- Le client crée un socket UDP pour établir une connexion avec le
 > serveur en utilisant les fonctions socket() et getaddrinfo() pour
 > obtenir les informations d\'adresse du serveur.
 >
-> 2\. Envoi de la Demande d\'Écriture (WRQ) :
+> B\. Envoi de la Demande d\'Écriture (WRQ) :
 >
 > \- Le client envoie un paquet de demande d\'écriture (WRQ) au serveur
 > via sendto(). Ce paquet contient le nom du fichier à écrire et le mode
 > de transfert.
 >
-> 3\. Ouverture du Fichier :
+> C\. Ouverture du Fichier :
 >
 > \- Le client ouvre le fichier à envoyer en mode lecture binaire
 > (\"rb\") via fopen().
 >
-> 4\. Préparation et Envoi des Blocs de Données :
+> D\. Préparation et Envoi des Blocs de Données :
 >
 > \- Le client lit des blocs de données du fichier et les transmet au
 > serveur sous forme de paquets UDP. Chaque paquet comprend un en-tête
@@ -173,20 +172,20 @@ Acquittements :
 > \- Chaque bloc de données est envoyé individuellement au serveur via
 > sendto().
 >
-> 5\. Réception des ACK (Accusés de Réception) :
+> E\. Réception des ACK (Accusés de Réception) :
 >
 > \- Après l\'envoi de chaque bloc, le client attend un ACK du serveur
 > indiquant la réception réussie du bloc de données. La fonction
 > recvfrom() est utilisée pour cette attente.
 >
-> 6\. Contrôle de la Transmission :
+> F\. Contrôle de la Transmission :
 >
 > \- Si le client reçoit un ACK correspondant au numéro de bloc envoyé,
 > il transmet le bloc de données suivant. En cas d\'ACK incorrect ou
 > manquant, le client réessaie l\'envoi du même bloc.
 >
-> 7\. Fin du Transfert de Fichier :
+> G\. Fin du Transfert de Fichier :
 >
-> \- Lorsque le fichier est entièrement envoyé et que le dernier bloc
+> -  Lorsque le fichier est entièrement envoyé et que le dernier bloc
 > est transmis avec succès, le client termine le transfert et ferme le
 > fichier.
