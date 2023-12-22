@@ -13,7 +13,6 @@ conséquence, elle facilite la résolution du nom du serveur en une
 adresse IP utilisable.
 
 ![](vertopal_89c8a71fa7fa42ecbaba98c00c075c87/media/image1.png)
-{width="4.547674978127734in" height="0.8333814523184602in"}
 
 2.  Établissement d\'un Socket de Connexion vers le Serveur :
 
