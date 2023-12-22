@@ -12,8 +12,8 @@ d\'adresse liées à un nom d\'hôte ou une adresse IP donnés. En
 conséquence, elle facilite la résolution du nom du serveur en une
 adresse IP utilisable.
 
-![](vertopal_89c8a71fa7fa42ecbaba98c00c075c87/media/image1.png){width="4.547674978127734in"
-height="0.8333814523184602in"}
+![](vertopal_89c8a71fa7fa42ecbaba98c00c075c87/media/image1.png)
+{width="4.547674978127734in" height="0.8333814523184602in"}
 
 2.  Établissement d\'un Socket de Connexion vers le Serveur :
 
@@ -21,8 +21,8 @@ height="0.8333814523184602in"}
 > une adresse spécifiée, a été réalisée. Ceci a été accompli en
 > utilisant la fonction getaddrinfo().\
 > \
-> ![](vertopal_89c8a71fa7fa42ecbaba98c00c075c87/media/image2.png){width="6.070751312335958in"
-> height="1.5302602799650045in"}
+> ![](vertopal_89c8a71fa7fa42ecbaba98c00c075c87/media/image2.png)
+> {width="6.070751312335958in" height="1.5302602799650045in"}
 
 3.  Implémentation de Gettftp :
 
