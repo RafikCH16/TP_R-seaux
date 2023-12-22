@@ -3,7 +3,7 @@
 
 ## 1.  Utilisation de getaddrinfo pour Récupérer l\'Adresse du Serveur :
 
-Le segment de code présent dans le fichier \"ex2.c\" concerne la
+Le segment de code présent dans le fichier \"getaddrinfo.c\" concerne la
 création d\'un programme simple. En prenant le nom du serveur comme
 argument, ce code utilise la fonction getaddrinfo() afin d\'obtenir
 l\'adresse IP correspondante. L\'utilisation de cette fonction revêt une
