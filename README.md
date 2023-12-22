@@ -1,7 +1,7 @@
 # TP_R-seaux
 # Binome : CHAIR & BELKHIR
 
-1.  Utilisation de getaddrinfo pour Récupérer l\'Adresse du Serveur :
+## 1.  Utilisation de getaddrinfo pour Récupérer l\'Adresse du Serveur :
 
 Le segment de code présent dans le fichier \"ex2.c\" concerne la
 création d\'un programme simple. En prenant le nom du serveur comme
@@ -14,16 +14,16 @@ adresse IP utilisable.
 
 ![](vertopal_89c8a71fa7fa42ecbaba98c00c075c87/media/image1.png)
 
-2.  Établissement d\'un Socket de Connexion vers le Serveur :
+## 2.  Établissement d\'un Socket de Connexion vers le Serveur :
 
 > Au cours de cette étape, une connexion de socket vers un serveur, à
 > une adresse spécifiée, a été réalisée. Ceci a été accompli en
 > utilisant la fonction getaddrinfo().\
 > \
 > ![](vertopal_89c8a71fa7fa42ecbaba98c00c075c87/media/image2.png)
-> {width="6.070751312335958in" height="1.5302602799650045in"}
 
-3.  Implémentation de Gettftp :
+
+## 3.  Implémentation de Gettftp :
 
 > Au cours de cette phase, nous avons amorcé le processus en
 > introduisant la fonction gettftp. Cette fonction est conçue pour
@@ -32,9 +32,7 @@ adresse IP utilisable.
 > préalablement importé le serveur dans notre machine virtuelle, suivi
 > du lancement de l\'objet à l\'aide de la commande ./go.sh.
 >
-> ![](vertopal_89c8a71fa7fa42ecbaba98c00c075c87/media/image3.png){width="5.143974190726159in"
-> height="2.3492727471566055in"}
->
+> ![](vertopal_89c8a71fa7fa42ecbaba98c00c075c87/media/image3.png)
 > En adéquation avec les spécifications du protocole TFTP, nous avons
 > conçu un paquet RRQ (Read Request) conforme au format requis. Ce
 > paquet a ensuite été acheminé vers le serveur en utilisant la fonction
@@ -48,12 +46,9 @@ adresse IP utilisable.
 > au serveur, officialisant ainsi la présence des fichiers dans notre
 > répertoire local.
 >
-> ![](vertopal_89c8a71fa7fa42ecbaba98c00c075c87/media/image4.png){width="4.353698600174978in"
-> height="5.4960050306211725in"}
+> ![](vertopal_89c8a71fa7fa42ecbaba98c00c075c87/media/image4.png)
 >
-> ![](vertopal_89c8a71fa7fa42ecbaba98c00c075c87/media/image5.png){width="2.558332239720035in"
-> height="1.9870483377077865in"}![](vertopal_89c8a71fa7fa42ecbaba98c00c075c87/media/image6.png){width="2.5288812335958006in"
-> height="1.997240813648294in"}
+> ![](vertopal_89c8a71fa7fa42ecbaba98c00c075c87/media/image5.png)![](vertopal_89c8a71fa7fa42ecbaba98c00c075c87/media/image6.png)
 >
 > Explication Code :
 
@@ -140,11 +135,9 @@ Acquittements :
 > efficace entre l\'émetteur et le destinataire pendant le processus de
 > transmission.
 >
-> ![](vertopal_89c8a71fa7fa42ecbaba98c00c075c87/media/image7.png){width="4.518938101487314in"
-> height="1.120754593175853in"}
+> ![](vertopal_89c8a71fa7fa42ecbaba98c00c075c87/media/image7.png)
 >
-> ![](vertopal_89c8a71fa7fa42ecbaba98c00c075c87/media/image8.png){width="4.9356288276465445in"
-> height="1.8822922134733158in"}
+> ![](vertopal_89c8a71fa7fa42ecbaba98c00c075c87/media/image8.png)
 >
 > Explication code :
 >
