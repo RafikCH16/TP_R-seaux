@@ -110,7 +110,7 @@ E.  Réception et Écriture des Données du Serveur :
 
 ## 4.  PutTFTP : Transmission d\'un Fichier au Serveur :
 
-> Construction d\'une Requête en Écriture (WRQ) et Envoi au Serveur :
+ Construction d\'une Requête en Écriture (WRQ) et Envoi au Serveur :
 >
 > La fonction putFile se charge de construire une requête en écriture
 > (WRQ) parfaitement formulée, incluant le nom du fichier, le mode
