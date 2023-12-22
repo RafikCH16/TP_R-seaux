@@ -147,45 +147,45 @@ Acquittements :
 >
 > A\. Initialisation du Client :
 >
-> - Le client crée un socket UDP pour établir une connexion avec le
+> -  Le client crée un socket UDP pour établir une connexion avec le
 > serveur en utilisant les fonctions socket() et getaddrinfo() pour
 > obtenir les informations d\'adresse du serveur.
 >
 > B\. Envoi de la Demande d\'Écriture (WRQ) :
 >
-> - Le client envoie un paquet de demande d\'écriture (WRQ) au serveur
+> -  Le client envoie un paquet de demande d\'écriture (WRQ) au serveur
 > via sendto(). Ce paquet contient le nom du fichier à écrire et le mode
 > de transfert.
 >
 > C\. Ouverture du Fichier :
 >
-> - Le client ouvre le fichier à envoyer en mode lecture binaire
+> -  Le client ouvre le fichier à envoyer en mode lecture binaire
 > (\"rb\") via fopen().
 >
 > D\. Préparation et Envoi des Blocs de Données :
 >
-> - Le client lit des blocs de données du fichier et les transmet au
+> -  Le client lit des blocs de données du fichier et les transmet au
 > serveur sous forme de paquets UDP. Chaque paquet comprend un en-tête
 > de 4 octets avec l\'opcode 3 (données) et le numéro de bloc, ainsi que
 > les données lues du fichier (maximum 512 octets par paquet).
 >
-> - Chaque bloc de données est envoyé individuellement au serveur via
+> -   Chaque bloc de données est envoyé individuellement au serveur via
 > sendto().
 >
 > E\. Réception des ACK (Accusés de Réception) :
 >
-> - Après l\'envoi de chaque bloc, le client attend un ACK du serveur
+> -   Après l\'envoi de chaque bloc, le client attend un ACK du serveur
 > indiquant la réception réussie du bloc de données. La fonction
 > recvfrom() est utilisée pour cette attente.
 >
 > F\. Contrôle de la Transmission :
 >
-> - Si le client reçoit un ACK correspondant au numéro de bloc envoyé,
+> -   Si le client reçoit un ACK correspondant au numéro de bloc envoyé,
 > il transmet le bloc de données suivant. En cas d\'ACK incorrect ou
 > manquant, le client réessaie l\'envoi du même bloc.
 >
 > G\. Fin du Transfert de Fichier :
 >
-> -  Lorsque le fichier est entièrement envoyé et que le dernier bloc
+> -   Lorsque le fichier est entièrement envoyé et que le dernier bloc
 > est transmis avec succès, le client termine le transfert et ferme le
 > fichier.
