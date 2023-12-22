@@ -33,6 +33,7 @@ adresse IP utilisable.
 > du lancement de l\'objet à l\'aide de la commande ./go.sh.
 >
 > ![](vertopal_89c8a71fa7fa42ecbaba98c00c075c87/media/image3.png)
+> 
 > En adéquation avec les spécifications du protocole TFTP, nous avons
 > conçu un paquet RRQ (Read Request) conforme au format requis. Ce
 > paquet a ensuite été acheminé vers le serveur en utilisant la fonction
