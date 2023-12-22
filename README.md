@@ -1,4 +1,4 @@
-# TP_R-seaux
+# CR_TP_Reseaux
 # Binome : CHAIR & BELKHIR
 
 ## 1.  Utilisation de getaddrinfo pour Récupérer l\'Adresse du Serveur :
